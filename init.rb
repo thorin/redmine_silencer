@@ -2,7 +2,7 @@ require 'redmine'
 require 'redmine_silencer/issue_hooks.rb'
 require 'redmine_silencer/view_hooks.rb'
 
-Redmine::Plugin.register :redmine_silencer do
+Redmine::Plugin.register :mail_silencer do
   name 'Redmine Silencer plugin'
   author 'Alex Shulgin <ash@commandprompt.com>'
   description 'A Redmine plugin to suppress issue email notifications.'
