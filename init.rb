@@ -13,7 +13,6 @@ end
 
 prepare_block = Proc.new do
   Journal.send(:include, RedmineSilencer::JournalPatch)
-  JournalObserver.send(:include, RedmineSilencer::JournalObserverPatch)
 end
 
 if Rails.env.development?
