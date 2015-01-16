@@ -1,5 +1,14 @@
 require 'redmine'
 
+<<<<<<< HEAD
+Redmine::Plugin.register :mail_silencer do
+  name 'Redmine Silencer plugin'
+  author 'Alex Shulgin <ash@commandprompt.com>'
+  description 'A Redmine plugin to suppress issue email notifications.'
+  version '0.2.0'
+  url 'https://github.com/commandprompt/redmine_silencer'
+  requires_redmine :version_or_higher => '2.0.x'
+=======
 Redmine::Plugin.register :redmine_silencer do
   name 'Redmine Silencer 2'
   author 'Tobias Fischer'
@@ -7,6 +16,7 @@ Redmine::Plugin.register :redmine_silencer do
   version '0.4.0'
   url 'https://github.com/paginagmbh/redmine_silencer'
   requires_redmine :version_or_higher => '2.4.x'
+>>>>>>> 7ade0c9faf1bb8d7dc47a6479965920bc2eccc38
 
   permission :suppress_mail_notifications, {}
   
