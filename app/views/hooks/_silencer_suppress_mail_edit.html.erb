@@ -1,7 +1,7 @@
 <% if User.current.allowed_to?(:suppress_mail_notifications, @project) %>
   <%= label_tag 'suppress_mail' do -%>
     <%= hidden_field_tag 'suppress_mail', '0', :id => nil %>
-    <%= check_box_tag 'suppress_mail' %>
+    <%= check_box_tag 'suppress_mail', '1', Setting.plugin_redmine_silencer['silencer_default'] %>
     <%= l(:label_silencer_suppress_mail) %>
   <% end -%>
 <% end %>
